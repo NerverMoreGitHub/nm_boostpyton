@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.19)
-project(nm_boostpyton)
+project(nm_boostpython)
 set(CMAKE_CXX_STANDARD 20) # 设置出标准编号
 #设置boost相关信息
 set(BOOST_ROOT /home/nevermore/Soft/cpp_build/boost)
@@ -14,10 +14,13 @@ set(PYTHON_LIBRARY_DIR /usr/lib/python${PYTHON_VERSION}/config)
 #设置工程头文件、库文件等
 include_directories(${Boost_INCLUDE_DIR} ${PYTHON_INCLUDE_DIR})
 link_directories(${Boost_LIBRARY_DIR} ${PYTHON_LIBRARY_DIR})
-add_library(nm_boostpyton SHARED library.cpp)
+add_library(nm_boostpython SHARED library.cpp nm_bp_numpy.cpp nm_bp_numpy.h)
 #去除lib前置
-set_target_properties(nm_boostpyton PROPERTIES PREFIX "") #remove prefix 'lib'
+set_target_properties(nm_boostpython PROPERTIES PREFIX "") #remove prefix 'lib'
 #设置输出路径
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/py_wheel/nm_boostpython) #setting output path
 #设置链接模块
-target_link_libraries(nm_boostpyton boost_python${PYTHONVERSION} boost_system)
+target_link_libraries(nm_boostpython boost_python${PYTHONVERSION} boost_numpy${PYTHONVERSION} boost_system)
+
+#set(PYTHON_executable ${PROJECT_SOURCE_DIR}/venv/bin/python3)
+#add_executable(PYTHON_executable ${SOURCE_FILES})

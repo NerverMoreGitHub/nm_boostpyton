@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -g -shared -Wl,-soname,nm_boostpyton.so -o ../py_wheel/nm_boostpython/nm_boostpyton.so CMakeFiles/nm_boostpyton.dir/library.cpp.o   -L/home/nevermore/Soft/cpp_build/boost/lib  -L/usr/lib/python3.8/config  -Wl,-rpath,/home/nevermore/Soft/cpp_build/boost/lib:/usr/lib/python3.8/config -lboost_python38 -lboost_system 

@@ -1,5 +1,7 @@
 #include <boost/python.hpp>
 
+#include "nm_bp_numpy.h"
+
 using namespace boost::python;
 
 struct World
@@ -9,10 +11,11 @@ struct World
     std::string msg;
 };
 
-BOOST_PYTHON_MODULE(nm_boostpyton)
+BOOST_PYTHON_MODULE(nm_boostpython)
 {
     class_<World>("World")
             .def("greet", &World::greet)
             .def("set", &World::set)
             ;
+    export_numpy_example();
 }

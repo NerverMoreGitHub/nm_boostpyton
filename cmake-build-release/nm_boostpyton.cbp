@@ -89,6 +89,12 @@
 		<Unit filename="/home/nevermore/Work/cpp/nm_boostpyton/library.cpp">
 			<Option target="nm_boostpyton"/>
 		</Unit>
+		<Unit filename="/home/nevermore/Work/cpp/nm_boostpyton/nm_bp_numpy.cpp">
+			<Option target="nm_boostpyton"/>
+		</Unit>
+		<Unit filename="/home/nevermore/Work/cpp/nm_boostpyton/nm_bp_numpy.h">
+			<Option target="nm_boostpyton"/>
+		</Unit>
 		<Unit filename="/home/nevermore/Work/cpp/nm_boostpyton/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

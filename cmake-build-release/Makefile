@@ -67,24 +67,13 @@ RM = /home/nevermore/Soft/CLion/clion-2021.1.2/bin/cmake/linux/bin/cmake -E rm -
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nevermore/Work/cpp/nm_boostpyton
+CMAKE_SOURCE_DIR = /home/nevermore/Work/cpp/nm_boostpython
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nevermore/Work/cpp/nm_boostpyton/cmake-build-release
+CMAKE_BINARY_DIR = /home/nevermore/Work/cpp/nm_boostpython/cmake-build-release
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/nevermore/Soft/CLion/clion-2021.1.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -97,11 +86,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/home/nevermore/Soft/CLion/clion-2021.1.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nevermore/Work/cpp/nm_boostpyton/cmake-build-release/CMakeFiles /home/nevermore/Work/cpp/nm_boostpyton/cmake-build-release//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nevermore/Work/cpp/nm_boostpython/cmake-build-release/CMakeFiles /home/nevermore/Work/cpp/nm_boostpython/cmake-build-release//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nevermore/Work/cpp/nm_boostpyton/cmake-build-release/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nevermore/Work/cpp/nm_boostpython/cmake-build-release/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -130,17 +130,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named nm_boostpyton
+# Target rules for targets named nm_boostpython
 
 # Build rule for target.
-nm_boostpyton: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nm_boostpyton
-.PHONY : nm_boostpyton
+nm_boostpython: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nm_boostpython
+.PHONY : nm_boostpython
 
 # fast build rule for target.
-nm_boostpyton/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nm_boostpyton.dir/build.make CMakeFiles/nm_boostpyton.dir/build
-.PHONY : nm_boostpyton/fast
+nm_boostpython/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nm_boostpython.dir/build.make CMakeFiles/nm_boostpython.dir/build
+.PHONY : nm_boostpython/fast
 
 library.o: library.cpp.o
 
@@ -148,7 +148,7 @@ library.o: library.cpp.o
 
 # target to build an object file
 library.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nm_boostpyton.dir/build.make CMakeFiles/nm_boostpyton.dir/library.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nm_boostpython.dir/build.make CMakeFiles/nm_boostpython.dir/library.cpp.o
 .PHONY : library.cpp.o
 
 library.i: library.cpp.i
@@ -157,7 +157,7 @@ library.i: library.cpp.i
 
 # target to preprocess a source file
 library.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nm_boostpyton.dir/build.make CMakeFiles/nm_boostpyton.dir/library.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nm_boostpython.dir/build.make CMakeFiles/nm_boostpython.dir/library.cpp.i
 .PHONY : library.cpp.i
 
 library.s: library.cpp.s
@@ -166,8 +166,35 @@ library.s: library.cpp.s
 
 # target to generate assembly for a file
 library.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nm_boostpyton.dir/build.make CMakeFiles/nm_boostpyton.dir/library.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nm_boostpython.dir/build.make CMakeFiles/nm_boostpython.dir/library.cpp.s
 .PHONY : library.cpp.s
+
+nm_bp_numpy.o: nm_bp_numpy.cpp.o
+
+.PHONY : nm_bp_numpy.o
+
+# target to build an object file
+nm_bp_numpy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nm_boostpython.dir/build.make CMakeFiles/nm_boostpython.dir/nm_bp_numpy.cpp.o
+.PHONY : nm_bp_numpy.cpp.o
+
+nm_bp_numpy.i: nm_bp_numpy.cpp.i
+
+.PHONY : nm_bp_numpy.i
+
+# target to preprocess a source file
+nm_bp_numpy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nm_boostpython.dir/build.make CMakeFiles/nm_boostpython.dir/nm_bp_numpy.cpp.i
+.PHONY : nm_bp_numpy.cpp.i
+
+nm_bp_numpy.s: nm_bp_numpy.cpp.s
+
+.PHONY : nm_bp_numpy.s
+
+# target to generate assembly for a file
+nm_bp_numpy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nm_boostpython.dir/build.make CMakeFiles/nm_boostpython.dir/nm_bp_numpy.cpp.s
+.PHONY : nm_bp_numpy.cpp.s
 
 # Help Target
 help:
@@ -177,10 +204,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... nm_boostpyton"
+	@echo "... nm_boostpython"
 	@echo "... library.o"
 	@echo "... library.i"
 	@echo "... library.s"
+	@echo "... nm_bp_numpy.o"
+	@echo "... nm_bp_numpy.i"
+	@echo "... nm_bp_numpy.s"
 .PHONY : help
 
 

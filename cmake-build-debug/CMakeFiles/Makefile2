@@ -63,16 +63,16 @@ RM = /home/nevermore/Soft/CLion/clion-2021.1.2/bin/cmake/linux/bin/cmake -E rm -
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nevermore/Work/cpp/nm_boostpyton
+CMAKE_SOURCE_DIR = /home/nevermore/Work/cpp/nm_boostpython
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nevermore/Work/cpp/nm_boostpyton/cmake-build-debug
+CMAKE_BINARY_DIR = /home/nevermore/Work/cpp/nm_boostpython/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/nm_boostpyton.dir/all
+all: CMakeFiles/nm_boostpython.dir/all
 
 .PHONY : all
 
@@ -82,36 +82,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/nm_boostpyton.dir/clean
+clean: CMakeFiles/nm_boostpython.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/nm_boostpyton.dir
+# Target rules for target CMakeFiles/nm_boostpython.dir
 
 # All Build rule for target.
-CMakeFiles/nm_boostpyton.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nm_boostpyton.dir/build.make CMakeFiles/nm_boostpyton.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nm_boostpyton.dir/build.make CMakeFiles/nm_boostpyton.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nevermore/Work/cpp/nm_boostpyton/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target nm_boostpyton"
-.PHONY : CMakeFiles/nm_boostpyton.dir/all
+CMakeFiles/nm_boostpython.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nm_boostpython.dir/build.make CMakeFiles/nm_boostpython.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nm_boostpython.dir/build.make CMakeFiles/nm_boostpython.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nevermore/Work/cpp/nm_boostpython/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target nm_boostpython"
+.PHONY : CMakeFiles/nm_boostpython.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/nm_boostpyton.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nevermore/Work/cpp/nm_boostpyton/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/nm_boostpyton.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nevermore/Work/cpp/nm_boostpyton/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/nm_boostpyton.dir/rule
+CMakeFiles/nm_boostpython.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nevermore/Work/cpp/nm_boostpython/cmake-build-debug/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/nm_boostpython.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nevermore/Work/cpp/nm_boostpython/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/nm_boostpython.dir/rule
 
 # Convenience name for target.
-nm_boostpyton: CMakeFiles/nm_boostpyton.dir/rule
+nm_boostpython: CMakeFiles/nm_boostpython.dir/rule
 
-.PHONY : nm_boostpyton
+.PHONY : nm_boostpython
 
 # clean rule for target.
-CMakeFiles/nm_boostpyton.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nm_boostpyton.dir/build.make CMakeFiles/nm_boostpyton.dir/clean
-.PHONY : CMakeFiles/nm_boostpyton.dir/clean
+CMakeFiles/nm_boostpython.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nm_boostpython.dir/build.make CMakeFiles/nm_boostpython.dir/clean
+.PHONY : CMakeFiles/nm_boostpython.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
