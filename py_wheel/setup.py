@@ -5,6 +5,7 @@ PROJECT_ROOT = path.abspath(path.dirname(__file__))
 PACKAGE_NAME = "nm_boostpython"
 PACKAGE_ROOT = path.join(PROJECT_ROOT, PACKAGE_NAME)
 
+#重要：添加除py文件之外的文件
 package_data = {PACKAGE_NAME: ['nm_boostpyton.so']} # warning this must be '' not ""
 
 setup(name='nm_boostpython',
