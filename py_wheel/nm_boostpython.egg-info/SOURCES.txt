@@ -1,0 +1,8 @@
+setup.py
+nm_boostpython/__init__.py
+nm_boostpython/nm_boostpyton.so
+nm_boostpython.egg-info/PKG-INFO
+nm_boostpython.egg-info/SOURCES.txt
+nm_boostpython.egg-info/dependency_links.txt
+nm_boostpython.egg-info/top_level.txt
+test/test_package.py
